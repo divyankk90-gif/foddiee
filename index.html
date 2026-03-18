@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyanka's Food Decision Wheel 🍕</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #2c3e50; /* Dark, classy background */
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        h1 { font-weight: 800; text-transform: uppercase; letter-spacing: 2px; color: #ecf0f1; margin-bottom: 10px; }
+        p { margin-top: 0; color: #bdc3c7; }
+
+        /* --- The Main Wheel Container --- */
+        .wheel-container {
+            position: relative;
+            width: 350px;
+            height: 350px;
+            margin-top: 20px;
+        }
+
+        /* --- The Spinning Wheel Itself --- */
+        .wheel {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 10px solid #ecf0f1; /* White border */
+            position: absolute;
+            overflow: hidden;
+            transition: transform 4s cubic-bezier(0.1, 1, 0.1, 1); /* Smooth spin animation */
+            box-shadow: 0 0 30px rgba(0,0,0,0.5);
+        }
+
+        /* --- Each Slice/Segment of the Wheel --- */
+        .slice {
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            transform-origin: 100% 100%; /* Important for pie shape */
+            display: flex;
+            justify-content
